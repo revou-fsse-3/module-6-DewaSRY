@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "zoo-api"
-version = "0.1.0"
+version = "0.0.1"
 description = ""
 authors = ["DewaSRY <sdewa6645@gmail.com>"]
 readme = "README.md"
@@ -23,6 +23,3 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 
-[virtualenvs]
-create = true
-in-project = true
