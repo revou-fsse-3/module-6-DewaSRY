@@ -24,7 +24,7 @@ FLASK_ENV=development
 - in locale `http://127.0.0.1:5000/swagger-ui`
 - in production `<YOUR_URL>/swagger-ui`
 
-## flask\_ migrate comments
+## data base set up
 
 ```bash
 //comment to set_up the data base
@@ -40,3 +40,5 @@ poetry run flask db upgrade
 poetry run flask db migrate && poetry run flask db upgrade
 
 ```
+
+## testing flask
