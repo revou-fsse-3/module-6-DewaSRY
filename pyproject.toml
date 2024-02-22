@@ -4,7 +4,7 @@ version = "0.0.1"
 description = ""
 authors = ["DewaSRY <sdewa6645@gmail.com>"]
 readme = "README.md"
-packages = [{include = "zoo_api", from = "src"}]
+
 
 [tool.poetry.dependencies]
 python = "^3.12"
