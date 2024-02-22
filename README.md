@@ -17,7 +17,7 @@ FLASK_ENV=development
 2. Install all Dependency - `poetry install`
 3. set up the environment `poetry shell`
 4. run the app -`poetry run flask run`
-5. Run Unit Test - `poetry run py -m unittest .\test\main.py`
+5. Run Unit Test - `poetry run py -m unittest test`
 
 ## To see the swagger ui Document
 
