@@ -5,17 +5,16 @@ on:
     branches: ["main"]
   pull_request:
     branches: ["main"]
+
 jobs:
   ci:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: Install Python
+        uses: actions/setup-python@v5
         # see details (matrix, python-version, python-version-file, etc.)
         # https://github.com/actions/setup-python
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "^3.12"
       - name: Install poetry
         uses: abatilo/actions-poetry@v2
       - name: Setup a local virtual environment (if no poetry.toml file)
@@ -30,4 +29,4 @@ jobs:
       - name: Install the project dependencies
         run: poetry install
       - name: Run the automated tests (for example)
-        run: poetry run py -m unittest .\test\main.py
+        run: poetry run pytest -v
