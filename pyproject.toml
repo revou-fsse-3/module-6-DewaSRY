@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{include = "zoo_api", from = "src"}]
 
 [tool.poetry.dependencies]
-python = "3.10.12"
+python = "^3.12"
 flask = "^3.0.2"
 flask-smorest = "^0.43.0"
 python-dotenv = "^1.0.1"
